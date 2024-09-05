@@ -4,16 +4,17 @@
     padding: 0;
 }
 
+
 body {
     background-color: #a1c3ff;
     color:
         height: 800px;
     width: 100%;
-    font-family: 'roboto';
+    font-family: 'poppins';
 }
 
 
-#banner {
+.banner {
     display: flex;
     color: white;
     width: 100%;
@@ -28,7 +29,7 @@ body {
 }
 
 .item1 ul li {
-    font-family: 'roboto';
+    font-family: 'poppins';
     display: inline-flex;
     list-style: none;
     justify-content: space-between;
@@ -39,7 +40,7 @@ body {
 
 }
 
-#firstLayer {
+.firstLayer {
     display: flex;
     background-color: #0a51cc;
     align-items: center;
@@ -53,7 +54,7 @@ body {
 
 
 
-#secondLayer {
+.secondLayer {
     display: flex;
     height: 400px;
     width: 100%;
@@ -64,7 +65,7 @@ body {
 
 }
 
-#secondLayer .item {
+.secondLayer .item {
     background-color: #0a51cc;
     padding: 10px 20px 10px 20px;
     text-justify: center;
@@ -77,7 +78,7 @@ body {
     margin-left: 10px;
     text-align: left;
     height: 200px;
-    width: 50%;
+    width: 100%;
 
 }
 
@@ -88,7 +89,7 @@ body {
 
 }
 
-#secondLayer .item2 {
+.secondLayer .item2 {
     background-color: #0a51cc;
     padding: 10px 20px 10px 20px;
     text-justify: center;
@@ -101,7 +102,7 @@ body {
     margin-left: 10px;
     text-align: left;
     height: 200px;
-    width: 50%;
+    width: 100%;
 }
 
 .item2 p {
@@ -109,7 +110,7 @@ body {
     color: #a1c3ff;
 }
 
-#secondLayer .item3 {
+.secondLayer .item3 {
     background-color: #0a51cc;
     padding: 10px 20px 100px 20px;
     text-justify: center;
@@ -122,10 +123,37 @@ body {
     margin-left: 10px;
     text-align: left;
     height: 200px;
-    width: 50%;
+    width: 100%;
 }
 
 .item3 p {
     margin-top: 10px;
     color: #a1c3ff;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    .firstLayer {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        text-justify: center;
+        height: auto;
+        justify-content: space-between;
+
+    }
+
+    .secondLayer {
+        display: block;
+        justify-content: space-between;
+        padding: 20px 20px 20px 20px;
+        height: auto;
+    }
 }
